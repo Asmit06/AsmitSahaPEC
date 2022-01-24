@@ -13,7 +13,7 @@ print(str_cop)
 str3=str1.replace("a case sensitive","object oriented") #replaces "a case sensitive" with "object orieted"
 print(str3)
 #part e
-str1_index=str1.index(" a ")+1 #gives first occurence of "a"
+str1_index=str1.index("a") #gives first occurence of "a" 
 print(str1_index)
 #part f
 str1_white=str1.strip() #removes whitespace from string
