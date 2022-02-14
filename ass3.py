@@ -181,7 +181,10 @@ print("Sorted by SID")
 print(dicc)
 #Part d
 sidenter=int(input("Enter sid to search : "))
-print(dict1[sidenter])#prints the name after searching in dictionary
+if sidenter in sidc:
+    print(dict1[sidenter])#prints the name after searching in dictionary
+else:
+    print("SID dosent exist")
 print()
 print()
 print("-----------------------------------------------------------------------------------------------------------------------------------------")
