@@ -60,9 +60,9 @@ print("Is the function callable?",callable(divmod))#checks if function is callab
 #part b
 print("PART B")
 if all(rb):#checks if any of the value's are zero
-    print("All all values non zero?",True)
+    print("Are all values non zero?",True)
 else:
-    print("All all values non zero?",False)
+    print("Are all values non zero?",False)
 #part c
 print("PART C")
 cop=list(rb)+[4,5,6]#adds the list to original list of values
