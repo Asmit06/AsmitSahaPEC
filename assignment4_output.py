@@ -31,7 +31,8 @@ Is the function callable? True
 PART B
 Are all values non zero? True
 PART C
-Numbers greater than 4 [11, 5, 5, 6]
+New List : [11, 2, 5, 1, 4, 5, 6]
+Filtered List (greater than 4) : [11, 5, 5, 6]
 PART D
 After conversion to set: {11, 5, 6}
 PART E
