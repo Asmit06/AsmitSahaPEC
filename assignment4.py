@@ -66,11 +66,12 @@ else:
 #part c
 print("PART C")
 cop=list(rb)+[4,5,6]#adds the list to original list of values
+print("New List :",cop)
 result=[]
 for i3 in cop:
     if i3>4:
         result.append(i3)#adds values greater than 4 into a new list
-print("Numbers greater than 4",result)
+print("Filtered List (greater than 4) :",result)
 #part d
 print("PART D")
 result_set=set(result)#converts list to set
