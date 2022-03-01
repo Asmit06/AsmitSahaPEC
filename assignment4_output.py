@@ -29,7 +29,7 @@ Quotient and remainder : (5, 1)
 PART A
 Is the function callable? True
 PART B
-All all values non zero? True
+Are all values non zero? True
 PART C
 Numbers greater than 4 [11, 5, 5, 6]
 PART D
