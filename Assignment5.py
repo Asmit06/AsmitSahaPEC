@@ -60,7 +60,7 @@ def calendar_():#Defining a function to Create a separate window to display the 
     if len(en1.get()) == 0:
         messagebox.showerror("Error", "Error! : No value has been entered for year.")
     elif int(en1.get()) <= 0:
-        messagebox.showerror("Error", "Error! :  Year cannot be -ve or 0.")
+        messagebox.showerror("Error", "Error! :  Year cannot be negative or 0.")
     else:# Creating an exception if invalid integer is entered by the user.
         try:
             year = int(en1.get())#Getting value from entry box 1.
@@ -79,7 +79,6 @@ def calendar_():#Defining a function to Create a separate window to display the 
         txt1.insert('end', cal)# Inserting calendar string in Text box 1.
         top1.mainloop()
 win2 = Tk()
-# Title and icon.
 win2.title("Question 2")
 # Geometry
 win2.geometry('400x300')
@@ -92,18 +91,12 @@ Heading.pack(pady=10, ipadx=10)
 f1 = Frame(win2, bd=20)
 f1.pack()
 # Content
-lb1 = Label(f1, text="Enter year :", font="Arial 12")                                                                   # Label 1
+lb1 = Label(f1, text="Enter year :")                                                                   
 lb1.pack(pady=5)
-tip1 = Balloon()                                                                                                        # tip1 for suggestion message.
-tip1['bg'] = 'white'
-en1 = Entry(f1, font="Arial 12")                                                                                        # Entry box 1
+en1 = Entry(f1)                                                                                        
 en1.pack(pady=5)
-tip1.bind_widget(en1, balloonmsg="Enter the year (Integer)")
-tip2 = Balloon()                                                                                                        # tip2 for suggestion message.
-tip2['bg'] = 'white'
-bt1 = Button(f1, text="Show Calendar", command=calendar_, cursor='hand2', font="Arial 12")                               # Button 1
+bt1 = Button(f1, text="Show Calendar", command=calendar_, cursor='hand2')                               
 bt1.pack(pady=5)
-tip2.bind_widget(bt1, balloonmsg="Click to show Calendar.")
 win2.mainloop()
 
 
